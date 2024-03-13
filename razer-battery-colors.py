@@ -16,14 +16,14 @@ while True:
     # print ("Devices 1 name: ", devices[1].name)
 
     # ad-hoc cmd to check battery level and charging status: python3 -c "import openrazer.client; a = openrazer.client.DeviceManager().devices[0]; print(a.is_charging, a.battery_level)"
-    
+
     if devices[0].name == "Razer Viper Ultimate (Wireless)":
         mouse = devices[0]
         dock = devices[1]
     else:
         mouse = devices[1]
         dock = devices[0]
-    
+
     # print(mouse.is_charging)
 
     if mouse.is_charging:
@@ -39,7 +39,7 @@ while True:
             # print("Battery > 50 and <= 75: ", mouse.battery_level)
         elif (mouse.battery_level > 25) and (mouse.battery_level <= 50):
             # Static Orange
-            dock.fx.breath_single(255, 160, 0)
+            dock.fx.breath_single(255, 50, 0)
             ### For debugging purposes you may want to print out the battery level
             # print("Battery > 25 and <= 50: ", mouse.battery_level)
         elif mouse.batter_level <= 25:
@@ -60,7 +60,7 @@ while True:
             # print("Battery > 50 and <= 75: ", mouse.battery_level)
         elif (mouse.battery_level > 25) and (mouse.battery_level <= 50):
             # Static Orange
-            dock.fx.static(255, 160, 0)
+            dock.fx.static(255, 50, 0)
             ### For debugging purposes you may want to print out the battery level
             # print("Battery > 25 and <= 50: ", mouse.battery_level)
         elif mouse.batter_level <= 25:
