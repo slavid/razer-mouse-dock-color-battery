@@ -18,10 +18,10 @@ chmod +x razer-battery-colors.py
 ### Crontab:
 
 ```
-* * * * * /path/to/razer-battery-colors.py >/dev/null 2>&1
+* * * * * /path/to/crontab-razer-battery-colors.py >/dev/null 2>&1
 ```
 
-Because you are going to run the script each minute (or your desired frequency), you don't need to have an endless loop, so you would need to remove the following two lines from code and adjust indentation:
+Because you are going to run the script each minute (or your desired frequency), you don't need to have an endless loop, so you would need to use the script named `crontab-razer-battery-colors.py` which what it does is remove the following two lines from `razer-battery-colors.py` and adjust indentation:
 
 Line 10:
 ```python
