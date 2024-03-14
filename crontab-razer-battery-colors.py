@@ -41,7 +41,7 @@ if mouse.is_charging:
         dock.fx.breath_single(255, 50, 0)
         ### For debugging purposes you may want to print out the battery level
         # print("Battery > 25 and <= 50: ", mouse.battery_level)
-    elif mouse.batter_level <= 25:
+    elif mouse.battery_level <= 25:
         # Static Red
         dock.fx.breath_single(255, 0, 0)
         ### For debugging purposes you may want to print out the battery level
@@ -62,7 +62,7 @@ else:
         dock.fx.static(255, 50, 0)
         ### For debugging purposes you may want to print out the battery level
         # print("Battery > 25 and <= 50: ", mouse.battery_level)
-    elif mouse.batter_level <= 25:
+    elif mouse.battery_level <= 25:
         # Static Red
         dock.fx.static(255, 0, 0)
         ### For debugging purposes you may want to print out the battery level
