@@ -11,6 +11,8 @@ Glowing effect if mouse is charging (docked), static when not charging (undocked
 
 ## Usage
 
+First make the script executable:
+
 ```bash
 chmod +x razer-battery-colors.py
 ```
@@ -65,6 +67,8 @@ Description: Change Dock colors depending on the battery level of the mouse
 You can adjust the time between checks from 300 seconds (5 minutes) to your desired frequency.
 
 This approach may not work perfectly, see https://github.com/slavid/razer-mouse-dock-color-battery/issues/1
+
+__2024/03/16__: Solution is to make sure `devices_off_on_screensaver` is set to False in `razer.conf` file located at `/home/$USER/.config/openrazer`.
 
 ## Acknowledgements
 
