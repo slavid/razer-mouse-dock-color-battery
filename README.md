@@ -68,7 +68,7 @@ You can adjust the time between checks from 300 seconds (5 minutes) to your desi
 
 This approach may not work perfectly, see https://github.com/slavid/razer-mouse-dock-color-battery/issues/1
 
-__2024/03/16__: Solution is to make sure `devices_off_on_screensaver` is set to False in `razer.conf` file located at `/home/$USER/.config/openrazer`.
+__2024/03/16__: Solution is to make sure `devices_off_on_screensaver` is set to `False` in `razer.conf` file located at `/home/$USER/.config/openrazer`.
 
 ## Acknowledgements
 
